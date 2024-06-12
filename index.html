@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Registration Form</title>
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background: url(background.mp3);
+    background-image: url(background.mp3);
+    background-color: #fafafa;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  .container {
+    position: absolute;
+    width:max-content;
+    height:max-content;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 10;
+    }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  input[type="text"], input[type="tel"], input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  input[type="submit"] {
+    background-color: #7538f0;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="submit"]:hover {
+    background-color: #3578e5;
+  }
+  #bg{
+    position: fixed;
+    right: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: 1;
+    object-fit: cover;
+  }
+  .imgcontainer {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  img {
+    width:100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+<body>
+<div a class="imgcontainer">
+  <img src="./image1.jpg">
+<div class="container">
+  <h2>Registration Form</h2>
+  <form action="#">
+    <input type="text" id="firstname" name="firstname" placeholder="First Name" required>
+    <input type="text" id="lastname" name="lastname" placeholder="Last Name" required>
+    <input type="tel" id="phone" name="phone" placeholder="Phone Number" required>
+    <input type="text" id="school" name="school" placeholder="School" required>
+    <input type="submit" value="Register">
+  </form>
+</div>
+</body>
+</html>
